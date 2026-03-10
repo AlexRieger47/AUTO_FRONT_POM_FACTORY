@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.annotations.DefaultUrl;
 
-@DefaultUrl("https://www.saucedemo.com")
+@DefaultUrl("/")
 public class LoginPage extends PageObject {
 
     @FindBy(id = "user-name")

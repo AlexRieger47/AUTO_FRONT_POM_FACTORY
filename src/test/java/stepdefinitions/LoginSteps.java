@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
-import net.serenitybdd.core.Serenity;
 import pages.login.LoginPage;
 import pages.tickets.TicketListPage;
 
@@ -30,7 +29,7 @@ public class LoginSteps {
 
     @Then("the user should be redirected to the ticket list page")
     public void theUserShouldBeRedirectedToTheTicketListPage() {
-        assertThat(Serenity.getDriver().getCurrentUrl()).contains("inventory");
+        assertThat(ticketListPage.isOnTicketListPage()).isTrue();
     }
 
     @Given("the user is logged in with username {string} and password {string}")

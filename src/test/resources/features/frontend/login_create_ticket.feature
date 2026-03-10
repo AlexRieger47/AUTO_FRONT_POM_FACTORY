@@ -6,9 +6,13 @@ Feature: Login and Create Ticket
   Background:
     Given the user is on the login page
 
-  Scenario: Successful login with valid credentials
-    When the user logs in with username "standard_user" and password "secret_sauce"
+  Scenario Outline: Successful login with valid credentials
+    When the user logs in with username "<username>" and password "<password>"
     Then the user should be redirected to the ticket list page
+
+    Examples:
+      | username      | password     |
+      | standard_user | secret_sauce |
 
   Scenario: Create a new ticket after login
     Given the user is logged in with username "standard_user" and password "secret_sauce"
