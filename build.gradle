@@ -19,7 +19,7 @@ dependencies {
     testImplementation "net.serenity-bdd:serenity-core:${serenityVersion}"
     testImplementation "net.serenity-bdd:serenity-cucumber:${serenityVersion}"
     testImplementation "net.serenity-bdd:serenity-junit5:${serenityVersion}"
-    testImplementation "org.assertj:assertj-core:3.24.2"
+    testImplementation "org.assertj:assertj-core:${assertjVersion}"
     testImplementation "io.cucumber:cucumber-java:${cucumberVersion}"
     testImplementation "io.cucumber:cucumber-junit-platform-engine:${cucumberVersion}"
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
